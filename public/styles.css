@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.module {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+h1, h2, h3 {
+    color: #0056b3;
+}
+.hidden {
+    display: none;
+}
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+.btn-normal {
+    background-color: #007bff;
+    color: white;
+}
+.btn-preferential {
+    background-color: #28a745;
+    color: white;
+}
+.btn-call {
+    background-color: #ffc107;
+    color: #333;
+}
+.btn-re-call {
+    background-color: #dc3545;
+    color: white;
+}
+.btn-admin {
+    background-color: #6c757d;
+    color: white;
+}
+button:hover {
+    opacity: 0.9;
+}
+.display-panel {
+    background-color: #ffffff;
+    color: #00008b;
+    padding: 40px;
+    border-radius: 8px;
+    font-size: 3em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.display-panel span {
+    font-size: 0.5em;
+    color: #4169e1;
+}
+.nav-links {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+}
+#display-panel-module p {
+    font-size: 2em;
+    color: #000000;
+    font-weight: bold;
+}
+#display-panel-module p span {
+    color: #000000;
+}
+#totem-module h2 {
+    font-size: 3em;
+}
+#totem-module p {
+    font-size: 1.5em;
+}
+#totem-module #ultima-senha-totem {
+    font-size: 2em;
+}
+
+/* Estilos para o novo layout do painel de exibição */
+body {
+    background-color: #1a2a4b;
+}
+.display-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 900px;
+    height: 100vh;
+}
+.main-display {
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+}
+.senha-label {
+    color: white;
+    font-size: 4em;
+    margin: 0;
+}
+.senha-box {
+    background-color: #1a2a4b;
+    border: 5px solid white;
+    margin: 20px auto;
+    width: 90%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.senha-box span {
+    color: #ffd700;
+    font-size: 8em;
+    font-weight: bold;
+}
+.antigos-display {
+    width: 250px;
+    background-color: #f0f2f5;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.antigos-label {
+    color: #1a2a4b;
+    font-size: 2em;
+    margin: 0;
+}
+.antigos-senhas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin-top: 20px;
+}
+.senha-box-antiga {
+    background-color: #1a2a4b;
+    border: 3px solid white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.senha-antiga-numero {
+    color: #ffd700;
+    font-size: 3em;
+    font-weight: bold;
+}
+.senha-antiga-triagem {
+    color: white;
+    font-size: 0.8em;
+    margin-top: -10px;
+}
+.triagem-text {
+    font-size: 2em;
+    color: white;
+    margin: 0;
+}

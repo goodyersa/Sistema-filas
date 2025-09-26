@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Exibição de Senhas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="display-container">
+        <div class="main-display">
+            <h1 class="senha-label">SENHA ATUAL</h1>
+            <button id="ativar-audio-btn" class="btn-admin">Ativar Áudio do Sistema</button>
+            <div class="senha-box">
+                <span id="senha-painel">--</span>
+                <p id="triagem-completa" class="triagem-text">--</p>
+            </div>
+        </div>
+        <div class="antigos-display">
+            <h2 class="antigos-label">ÚLTIMAS CHAMADAS</h2>
+            <div class="antigos-senhas" id="antigos-senhas-container">
+                </div>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+    <script>
+        // Inicializa a atualização do painel quando a página carrega
+        document.addEventListener('DOMContentLoaded', () => {
+            init(); // Chamada para a nova função de inicialização
+        });
+    </script>
+</body>
+</html>

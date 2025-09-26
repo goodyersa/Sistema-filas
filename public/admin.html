@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo do Administrador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="admin-module" class="module">
+            <h2>Módulo do Administrador</h2>
+            <p><strong>Total de Senhas Geradas:</strong> <span id="total-geral">0</span></p>
+            
+            <button id="ativar-audio-btn" class="btn-admin" onclick="ativarAudio()">Ativar Áudio do Sistema</button>
+            
+            <hr style="margin: 20px auto; width: 50%; border: 1px solid #ccc;">
+
+            <h3>Gerenciamento de Filas:</h3>
+            <button class="btn-admin btn-re-call" onclick="resetarSenhas()">Reiniciar Contagem das Senhas</button>
+
+            <hr style="margin: 20px auto; width: 50%; border: 1px solid #ccc;">
+            
+            <h3>Abrir Módulos:</h3>
+            <a href="totem.html"><button class="btn-admin">Totem</button></a>
+            <a href="operator.html"><button class="btn-admin">Operador</button></a>
+            <a href="display.html"><button class="btn-admin">Painel de Exibição</button></a>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            atualizarPainelExibicao();
+            setInterval(atualizarPainelExibicao, 3000);
+        });
+    </script>
+</body>
+</html>

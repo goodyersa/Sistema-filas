@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo do Operador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="operator-module" class="module">
+            <h2>Módulo do Operador</h2>
+            <p>Selecione a Triagem:</p>
+            <button id="triagem1-btn" class="btn-call active" onclick="selecionarTriagem('Triagem 1')">Triagem 1</button>
+            <button id="triagem2-btn" class="btn-call" onclick="selecionarTriagem('Triagem 2')">Triagem 2</button>
+            <p id="triagem-selecionada-info">Triagem Selecionada: **Triagem 1**</p>
+            
+            <p>Contador de Senhas Restantes: <span id="contador-senhas">0</span></p>
+            <button class="btn-call" onclick="chamarProximaSenha()">Chamar Próxima Senha</button>
+            <button class="btn-re-call" onclick="rechamarSenha()">Rechamar Senha</button>
+            <div style="margin-top: 20px;">
+                <h3>Senha Atendida:</h3>
+                <p id="senha-atendida" style="font-size: 2em; font-weight: bold;"></p>
+                <p id="triagem-operador"></p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            atualizarPainelExibicao();
+            setInterval(atualizarPainelExibicao, 3000);
+        });
+    </script>
+</body>
+</html>
